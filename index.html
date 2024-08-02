@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imdb clone</title>
+<!-- CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+<div class=" logo">
+    <div class="container">
+        <p>IMDb<span>Clone</span></p>
+    </div>
+</div>
+<!-- end of logo -->
+
+<!-- search contAIner -->
+<div class = "search-container">
+    <div class = "search-element">
+        <h3>Search Movie:</h3>
+        <input type = "text" class = "form-control" placeholder="Search Movie Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+
+        <div class = "search-list" id = "search-list">
+            <!-- list here -->
+            <!-- <div class = "search-list-item">
+                <div class = "search-item-thumbnail">
+                    <img src = "medium-cover.jpg">
+                </div>
+                <div class = "search-item-info">
+                    <h3>Guardians of the Galaxy Vol. 2</h3>
+                    <p>2017</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- End of search container -->
+
+<!-- result container -->
+
+<div class="container">
+    <!-- <img src="asset/depositphotos_381063240-stock-photo-the-iphone-with-macbook-pro.jpg" alt=""> -->
+    <div class="result-container">
+        <div class="result-grid" id="result-grid">
+            <!-- Movie info here --> 
+            <div class="movie-poster">
+                <img src="asset/03ee396eaf7255a8b6bbdfd8d62530bd.jpg" alt="movie-poster">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Iron Man-2</h3>
+     <ul class="movie-misc-info">
+     <li class="year">Year:2007</li>
+       <li class="rated">rated:PG:13</li>
+     <li class="released">Released:07-may</li>
+
+          </ul>
+                <p class="genre"><b>Genre:</b>Action,Advanture,Comedy</p>
+       <p class="writer"><b>Writer:</b>
+                    Justin Theroux,Stan Lee,Don Heck</p>
+                <p class="actors"><b>Actors:</b>Robert Downey Jr.,Mickey Rourke,Gwyneth Paltrow</p>
+    <p class="plot"><b>Plot:</b>In Russia, the media covers Tony Stark's disclosure of his 
+                    identity as Iron Man. Ivan Vanko, whose father Anton Vanko—a former Stark Industries employee—has just 
+                    died, sees this and builds the
+                     same miniature arc reactor as Stark's using old Stark Industries blueprints left behind by Anton.</p>
+   <p class="language"><b>Language:</b>Hindi,English</p>
+                <!-- <p class="awards"><b>Awards:</b>Action,Advanture,Comedy</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+ End of result container -->
+    </div>
+
+    <!-- <div id="gold-silver-copper"></div> -->
+    <!-- script -->
+    <script src="imdb.js"></script>
+</body>
+</html>
